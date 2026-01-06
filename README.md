@@ -1,16 +1,86 @@
-# React + Vite
+# Alessandro Portfolio Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive, and bilingual personal portfolio website built with React, featuring advanced animations and smooth scrolling.
 
-Currently, two official plugins are available:
+![Project Preview](https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=1000&auto=format&fit=crop)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🌟 Features
 
-## React Compiler
+*   **Responsive Design**: Fully optimized for Desktop, Tablet, and Mobile devices.
+*   **Bilingual Support**: Instant toggle between English (EN) and Spanish (ES).
+*   **Smooth Scrolling**: Implemented using [Lenis](https://lenis.darkroom.engineering/) for a premium feel.
+*   **Advanced Animations**: Powered by [GSAP](https://greensock.com/gsap/) (ScrollTrigger, Text Reveal).
+*   **Modern UI/UX**: Dark mode aesthetic with neon accents, glassmorphism, and custom typography.
+*   **Component Architecture**: Clean, folder-based structure for maintainability.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🛠️ Tech Stack
 
-## Expanding the ESLint configuration
+*   **Framework**: [React](https://react.dev/) + [Vite](https://vitejs.dev/)
+*   **Styling**: Pure CSS3 (CSS Variables, Flexbox/Grid, Media Queries)
+*   **Animations**: GSAP (GreenSock Animation Platform)
+*   **Scroll**: Lenis
+*   **Icons**: React Icons (FontAwesome/Material)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 📂 Project Structure
+
+```bash
+src/
+├── components/           # Reusable UI components
+│   ├── Contact/          # Contact section layout & styles
+│   ├── CVSection/        # Resume/Experience details
+│   ├── Hero/             # Landing page banner
+│   ├── Projects/         # Horizontal scroll project showcase
+│   ├── LanguageToggle/   # EN/ES switcher
+│   └── SmoothScroll/     # Lenis wrapper integration
+├── context/              # Global state management
+│   └── LanguageContext   # Translation provider
+├── data/                 # Static content
+│   └── translations.js   # Dictionary for EN/ES text
+└── App.jsx               # Main application entry
+```
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+*   Node.js (v18+ recommended)
+*   npm or yarn
+
+### Installation
+
+1.  **Clone the repository**
+    ```bash
+    git clone https://github.com/yourusername/portfolio.git
+    cd portfolio
+    ```
+
+2.  **Install dependencies**
+    ```bash
+    npm install
+    ```
+
+3.  **Run Development Server**
+    ```bash
+    npm run dev
+    ```
+    Open [http://localhost:5173](http://localhost:5173) in your browser.
+
+## 🏗️ Build for Production
+
+To create a production-ready build:
+
+```bash
+npm run build
+```
+
+This will generate static files in the `dist/` directory, optimized for deployment.
+
+## 🎨 Customization
+
+*   **Colors**: Edit `src/index.css` to update CSS variables (`--accent-color`, `--bg-color`).
+*   **Content**: Update `src/data/translations.js` to modify text for both languages.
+*   **Images**: Replace image URLs in `src/components/Projects/Projects.jsx`.
+
+## 📄 License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
