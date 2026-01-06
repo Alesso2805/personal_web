@@ -1,0 +1,33 @@
+.language-toggle {
+  position: fixed;
+  top: 2rem;
+  right: 2rem;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  border: 1px solid var(--grid-color);
+  transition: border-color 0.3s ease;
+}
+
+.language-toggle:hover {
+  border-color: var(--accent-color);
+  color: var(--text-primary);
+}
+
+.language-toggle span.active {
+  color: var(--accent-color);
+}
+
+.language-toggle .divider {
+  color: var(--text-secondary);
+  opacity: 0.5;
+}

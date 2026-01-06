@@ -1,0 +1,112 @@
+.cv-section {
+  position: relative;
+  background-color: var(--bg-color);
+}
+
+.cv-block {
+  width: 100%;
+}
+
+.mb-large {
+  margin-bottom: 6rem;
+}
+
+.section-title {
+  font-size: 5rem;
+  font-family: var(--font-serif);
+  color: var(--text-primary);
+  margin-bottom: 3rem;
+  text-align: left;
+  line-height: 1;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid var(--grid-color);
+}
+
+.about-text {
+  font-size: 1.5rem;
+  line-height: 1.6;
+  max-width: 800px;
+  color: var(--text-secondary);
+}
+
+.cv-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+.cv-item {
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  gap: 2rem;
+  padding: 2rem;
+  border: 1px solid var(--grid-color);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.cv-item:hover {
+  background-color: rgba(255, 255, 255, 0.02);
+  transform: translateX(10px);
+  border-color: var(--accent-color);
+}
+
+/* Skills box specific styling */
+.skills-box {
+  grid-template-columns: 1fr;
+}
+
+.cv-year {
+  font-family: var(--font-sans);
+  font-weight: 600;
+  font-size: 1.2rem;
+  white-space: nowrap;
+}
+
+.cv-period-mobile {
+  display: none;
+  font-size: 0.9rem;
+  color: var(--accent-color);
+  margin-bottom: 0.5rem;
+}
+
+.cv-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.cv-role {
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: var(--text-primary);
+}
+
+.cv-company {
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--text-secondary);
+}
+
+.cv-desc {
+  margin-top: 1rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 3rem;
+  }
+  .cv-item {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 1.5rem;
+  }
+  .cv-year {
+    display: none; /* Hide side date on mobile */
+  }
+  .cv-period-mobile {
+    display: block; /* Show inline date on mobile */
+  }
+}

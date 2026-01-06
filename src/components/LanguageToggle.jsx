@@ -1,0 +1,14 @@
+import { useLanguage } from '../context/LanguageContext';
+import './LanguageToggle.css';
+
+export default function LanguageToggle() {
+  const { language, toggleLanguage } = useLanguage();
+
+  return (
+    <button className="language-toggle" onClick={toggleLanguage}>
+      <span className={language === 'en' ? 'active' : ''}>EN</span>
+      <span className="divider">/</span>
+      <span className={language === 'es' ? 'active' : ''}>ES</span>
+    </button>
+  );
+}
