@@ -65,6 +65,17 @@
 
 @media (max-width: 768px) {
   .project-card {
-    width: 80vw;
+    width: 85vw;
+  }
+  .projects-container {
+    padding: 0 5vw;
+    gap: 2rem;
+  }
+  .projects-header {
+    top: 2rem;
+    left: 1.5rem;
+  }
+  .project-info h3 {
+    font-size: 1.5rem;
   }
 }

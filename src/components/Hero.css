@@ -88,8 +88,14 @@
 @media (max-width: 768px) {
   .hero-title {
     font-size: 15vw;
+    margin-bottom: 2rem;
   }
   .hero-subtitle {
     font-size: 1rem;
+    padding: 0 1rem;
+    line-height: 1.4;
+  }
+  .scroll-indicator {
+    bottom: 5rem; /* Give space for browser bottom bars */
   }
 }

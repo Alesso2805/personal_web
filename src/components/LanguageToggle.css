@@ -31,3 +31,13 @@
   color: var(--text-secondary);
   opacity: 0.5;
 }
+
+@media (max-width: 768px) {
+  .language-toggle {
+    top: 1rem;
+    right: 1rem;
+    padding: 0.4rem 0.8rem;
+    font-size: 0.9rem;
+    background: rgba(0, 0, 0, 0.7); /* More contrast on mobile */
+  }
+}

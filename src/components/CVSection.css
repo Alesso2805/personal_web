@@ -98,6 +98,9 @@
   .section-title {
     font-size: 3rem;
   }
+  .about-text {
+    font-size: 1.1rem;
+  }
   .cv-item {
     grid-template-columns: 1fr;
     gap: 1rem;
@@ -108,5 +111,11 @@
   }
   .cv-period-mobile {
     display: block; /* Show inline date on mobile */
+  }
+  .cv-role {
+    font-size: 1.5rem;
+  }
+  .skills-box .cv-desc {
+    font-size: 0.95rem;
   }
 }
