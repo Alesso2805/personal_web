@@ -1,14 +1,34 @@
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import gsap from 'gsap';
 import { useLanguage } from '../../context/LanguageContext';
 import './Hero.css';
 
 export default function Hero() {
   const containerRef = useRef(null);
-  const subtitleRef = useRef(null);
   const scrollRef = useRef(null);
   
   const { t } = useLanguage();
+  const [typedText, setTypedText] = useState('');
+
+  // Typing effect
+  useEffect(() => {
+    setTypedText('');
+    const text = t.hero.role;
+    let index = 0;
+    
+    // Start typing after title animation (approx 1.5s delay)
+    const timeoutId = setTimeout(() => {
+      const intervalId = setInterval(() => {
+        setTypedText(text.slice(0, index + 1));
+        index++;
+        if (index === text.length) clearInterval(intervalId);
+      }, 50); // Speed: 50ms per char
+      
+      return () => clearInterval(intervalId);
+    }, 1500);
+
+    return () => clearTimeout(timeoutId);
+  }, [t.hero.role]);
 
   useEffect(() => {
     const ctx = gsap.context(() => {
@@ -22,11 +42,6 @@ export default function Hero() {
         duration: 1.2,
         delay: 0.2
       })
-      .from(subtitleRef.current, {
-        y: 20,
-        opacity: 0,
-        duration: 1
-      }, '-=0.8')
       .to(scrollRef.current, {
         opacity: 1,
         duration: 0.5
@@ -35,7 +50,7 @@ export default function Hero() {
     }, containerRef);
 
     return () => ctx.revert();
-  }, [t]); // Re-run animation when language changes if desired, or just update text
+  }, [t]); 
 
   const renderTitle = (text) => {
     return text.split('').map((char, i) => (
@@ -54,7 +69,9 @@ export default function Hero() {
           <div className="line text-outline">{renderTitle(t.hero.lastName1.toUpperCase())}</div>
           <div className="line text-outline">{renderTitle(t.hero.lastName2.toUpperCase())}</div>
         </h1>
-        <p ref={subtitleRef} className="hero-subtitle">{t.hero.role}</p>
+        <p className="hero-subtitle">
+          {typedText}<span className="cursor-blink">|</span>
+        </p>
       </div>
       
       <div ref={scrollRef} className="scroll-indicator">

@@ -1,15 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Playfair+Display:ital,wght@0,600;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&family=Inter:wght@300;400;600&display=swap');
 
 :root {
-  --bg-color: #050505;
-  --text-primary: #ffffff;
-  --text-secondary: #a0a0a0;
-  --accent-color: #c7f910; /* Neon Lime */
-  --accent-hover: #b0e000;
-  --grid-color: rgba(255, 255, 255, 0.05);
+  --bg-color: #0a0a0a;
+  --text-primary: #e0e0e0;
+  --text-secondary: #888888;
+  --accent-color: #0f0; /* Neon Hacker Green */
+  --accent-secondary: #003300; /* Darker Green for backgrounds */
+  --grid-color: rgba(0, 255, 0, 0.1);
+  --error-color: #ff0055;
   
   --font-sans: 'Inter', sans-serif;
-  --font-serif: 'Playfair Display', serif;
+  --font-mono: 'JetBrains Mono', monospace;
 }
 
 * {

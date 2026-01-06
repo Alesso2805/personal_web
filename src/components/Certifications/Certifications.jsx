@@ -3,6 +3,7 @@ import gsap from 'gsap';
 import { useLanguage } from '../../context/LanguageContext';
 import { content } from '../../data/translations';
 import { FiArrowUpRight } from 'react-icons/fi';
+import GlitchText from '../GlitchText/GlitchText';
 import './Certifications.css';
 
 const Certifications = () => {
@@ -13,6 +14,15 @@ const Certifications = () => {
   const imageRef = useRef(null);
   const imageContainerRef = useRef(null);
   const [activeImage, setActiveImage] = useState('');
+  const [activeFilter, setActiveFilter] = useState('All');
+
+  // Extract Categories
+  const categories = ['All', ...new Set(t.items.map(item => item.category))];
+
+  // Filter Items
+  const filteredItems = activeFilter === 'All' 
+    ? t.items 
+    : t.items.filter(item => item.category === activeFilter);
 
   useEffect(() => {
     // Only set up GSAP if not on mobile (simple check)
@@ -57,12 +67,24 @@ const Certifications = () => {
   return (
     <section className="certifications section-padding" ref={containerRef}>
       <div className="container">
-        <h2 className="section-title" dangerouslySetInnerHTML={{ __html: t.title }}></h2>
+        <GlitchText text={t.title} className="section-title" />
         
+        <div className="cert-filters">
+          {categories.map(cat => (
+            <button 
+              key={cat} 
+              className={`filter-btn ${activeFilter === cat ? 'active' : ''}`}
+              onClick={() => setActiveFilter(cat)}
+            >
+              [{cat.toUpperCase()}]
+            </button>
+          ))}
+        </div>
+
         <div className="cert-list">
-          {t.items.map((item, index) => (
+          {filteredItems.map((item, index) => (
             <a 
-              key={index} 
+              key={`${item.name}-${index}`} 
               href={item.link} 
               target="_blank" 
               rel="noopener noreferrer"

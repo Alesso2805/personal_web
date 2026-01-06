@@ -1,6 +1,7 @@
 import { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import { useLanguage } from '../../context/LanguageContext';
+import GlitchText from '../GlitchText/GlitchText';
 import './CVSection.css';
 
 export default function CVSection() {
@@ -44,13 +45,13 @@ export default function CVSection() {
       
       {/* About / Profile */}
       <div className="cv-block mb-large">
-        <h2 className="section-title">{t.about.title}</h2>
+        <GlitchText text={t.about.title} className="section-title" />
         <p className="about-text">{t.about.description}</p>
       </div>
 
       {/* Experience */}
       <div className="cv-block mb-large">
-        <h2 className="section-title">{t.experience.title}</h2>
+        <GlitchText text={t.experience.title} className="section-title" />
         <div className="cv-grid">
           {t.experience.jobs.map((item, index) => (
             <div key={index} className="cv-item">
@@ -70,7 +71,7 @@ export default function CVSection() {
 
       {/* Education */}
       <div className="cv-block mb-large">
-        <h2 className="section-title">{t.education.title}</h2>
+        <GlitchText text={t.education.title} className="section-title" />
         <div className="cv-grid">
           {t.education.items.map((item, index) => (
             <div key={index} className="cv-item">
@@ -88,7 +89,7 @@ export default function CVSection() {
 
       {/* Skills */}
       <div className="cv-block">
-        <h2 className="section-title">{t.skills.title}</h2>
+        <GlitchText text={t.skills.title} className="section-title" />
         <div className="skills-box cv-item">
             <div className="cv-content" style={{gridColumn: '1 / -1'}}>
                 <p className="cv-desc"><strong>{t.skills.languages}</strong></p>

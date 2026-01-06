@@ -28,11 +28,51 @@
   opacity: 0.3;
 }
 
+.cert-filters {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 3rem;
+  border-bottom: 1px solid var(--text-secondary);
+  padding-bottom: 1rem;
+}
+
+.filter-btn {
+  background: transparent;
+  border: 1px solid #333;
+  color: var(--text-secondary);
+  padding: 0.5rem 1rem;
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+  color: var(--accent-color);
+  border-color: var(--accent-color);
+  box-shadow: 0 0 10px rgba(0, 255, 0, 0.1);
+  text-shadow: 0 0 5px var(--accent-color);
+}
+
+.filter-btn.active::before {
+  content: '>';
+  position: absolute;
+  left: -10px;
+  color: var(--accent-color);
+  animation: blink 1s infinite;
+}
+
 .cert-info h3 {
-  font-size: 1.5rem;
-  font-weight: 400;
+  font-family: var(--font-mono); /* Hacker style */
+  font-size: 1.3rem; 
+  font-weight: 500;
   margin-bottom: 0.5rem;
   color: var(--text-primary);
+  text-transform: uppercase;
 }
 
 .cert-info p {
@@ -41,9 +81,9 @@
 }
 
 .cert-year {
-  font-family: var(--font-serif);
-  font-style: italic;
-  color: var(--text-secondary);
+  font-family: var(--font-mono);
+  color: var(--accent-color);
+  opacity: 0.8;
 }
 
 .cert-link-icon {

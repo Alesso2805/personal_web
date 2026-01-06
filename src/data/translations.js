@@ -26,18 +26,25 @@ export const content = {
       title: "Experience",
       jobs: [
         {
-          company: "Flip",
-          role: "Pre-professional Intern in Process Automation",
-          period: "Jan 2025 – Present",
+          company: "White Lion Technology",
+          role: "Junior Fullstack Developer",
+          period: "Oct 2025 – Present",
+          location: "Lima, Peru (Remote)",
+          description: "Develop and maintain REST APIs using Python (FastAPI), implementing business logic. Implement data persistence/access using SQLAlchemy and MSSQL. Implement auth using JWT. Create/maintain unit and integration tests with Pytest. Document API endpoints and flows."
+        },
+        {
+          company: "Flip Inversiones",
+          role: "Pre-Professional Process Automation Intern",
+          period: "Jan 2025 – Oct 2025",
           location: "Lima, Peru",
-          description: "Responsible for automating investor movement reporting processes, optimizing operational efficiency and reducing costs and execution time using Python and libraries like Pyautogui and Pandas. Improving accuracy and speed of financial report generation."
+          description: "Responsible for automating investor movement report processes, optimizing operational efficiency reducing costs and execution time. Implementing automated solutions to enhance the accuracy and speed of financial report generation."
         },
         {
           company: "Promitia",
-          role: "Junior Frontend Developer",
+          role: "Junior Fullstack Developer",
           period: "Mar 2023 – Nov 2023",
-          location: "Lima, Peru",
-          description: "Specialized in creating attractive and functional interfaces using HTML, CSS, and JavaScript. Worked with various frameworks like Next.js, Angular and React, implementing efficient styles with Tailwind CSS. Optimized user experience contributing to project success."
+          location: "Lima, Peru (Remote)",
+          description: "As a frontend developer at Promitia, I specialized in creating attractive and functional interfaces using HTML, CSS, and JavaScript. I worked with various frameworks such as Next.js, Angular, and React, and implemented efficient styles with Tailwind CSS. I optimized the user experience and contributed to the success of projects."
         }
       ]
     },
@@ -84,63 +91,72 @@ export const content = {
           issuer: "Hack & Fix",
           date: "Jan 2026",
           image: cyberCert,
-          link: "https://drive.google.com/file/d/1u8Oq0zrgvl-MSeCvkva5-hAcBhK5jEwd/view?usp=sharing"
+          link: "https://drive.google.com/file/d/1u8Oq0zrgvl-MSeCvkva5-hAcBhK5jEwd/view?usp=sharing",
+          category: "Cybersecurity"
         },
         {
           name: "Python for Everybody Specialization",
           issuer: "University of Michigan",
           date: "Nov 2023",
           image: pythonCert,
-          link: "https://www.coursera.org/account/accomplishments/specialization/C8VNZPKH82H7"
+          link: "https://www.coursera.org/account/accomplishments/specialization/C8VNZPKH82H7",
+          category: "Python"
         },
         {
           name: "Introduction to MongoDB",
           issuer: "MongoDB",
           date: "Oct 2023",
           image: mongoCert,
-          link: "https://learn.mongodb.com/c/yLofRELnRMW7VP2Yqjcn9A"
+          link: "https://learn.mongodb.com/c/yLofRELnRMW7VP2Yqjcn9A",
+          category: "Web & DB"
         },
         {
           name: "Python Data Structures",
           issuer: "University of Michigan",
           date: "Oct 2023",
           image: pythonDataCert,
-          link: "https://www.coursera.org/account/accomplishments/certificate/4AQQDAYNXTHP"
+          link: "https://www.coursera.org/account/accomplishments/certificate/4AQQDAYNXTHP",
+          category: "Python"
         },
         {
           name: "Using Python to Access Web Data",
           issuer: "University of Michigan",
           date: "Oct 2023",
           image: pythonWebCert,
-          link: "https://www.coursera.org/account/accomplishments/certificate/94ZPAHZCQLQB"
+          link: "https://www.coursera.org/account/accomplishments/certificate/94ZPAHZCQLQB",
+          category: "Python"
         },
         {
           name: "Desarrollo Web",
           issuer: "Coderhouse",
           date: "Mar 2023",
           image: coderhouseCert,
-          link: "https://drive.google.com/file/d/1lvHVVzAcmEf8bxAvUXflhTGsmi-BuFgv/view"
+          link: "https://drive.google.com/file/d/1lvHVVzAcmEf8bxAvUXflhTGsmi-BuFgv/view",
+          category: "Web & DB"
         },
         {
           name: "EF SET English Certificate (C2 Proficient)",
           issuer: "EF Standard English Test",
           date: "Mar 2023",
           image: efSetCert,
-          link: "https://cert.efset.org/gWLT3c"
+          link: "https://cert.efset.org/gWLT3c",
+          category: "Languages"
         },
         {
           name: "Scrum Fundamentals Certified",
           issuer: "SCRUMstudy",
           date: "Nov 2022",
           image: scrumCert,
-          link: "https://drive.google.com/file/d/1GymqYMsXFXfKx2QpSiANc2JQJemcAYtz/view"
+          link: "https://drive.google.com/file/d/1GymqYMsXFXfKx2QpSiANc2JQJemcAYtz/view",
+          category: "Management"
         },
         {
           name: "Advanced Program of English",
           issuer: "ICPNA",
           date: "Apr 2019",
           image: icpnaCert,
-          link: "https://drive.google.com/file/d/1HKJXiNbQF2evdijxXY5OhIqJd6aLcOUf/view"
+          link: "https://drive.google.com/file/d/1HKJXiNbQF2evdijxXY5OhIqJd6aLcOUf/view",
+          category: "Languages"
         }
       ]
     }
@@ -162,18 +178,25 @@ export const content = {
       title: "Experiencia Laboral",
       jobs: [
         {
-          company: "Flip",
+          company: "White Lion Technology",
+          role: "Junior Fullstack Developer",
+          period: "Oct 2025 – Presente",
+          location: "Lima, Peru (Remoto)",
+          description: "Desarrollo y mantenimiento de APIs REST usando Python (FastAPI). Implementación de persistencia y acceso a datos usando SQLAlchemy y MSSQL. Implementación de autenticación usando JWT. Creación y mantenimiento de pruebas unitarias y de integración con Pytest. Documentación de endpoints y flujos de API."
+        },
+        {
+          company: "Flip Inversiones",
           role: "Practicante Pre-profesional en Automatización de Procesos",
-          period: "Ene 2025 – Presente",
+          period: "Ene 2025 – Oct 2025",
           location: "Lima, Peru",
-          description: "Responsable de automatizar los procesos de informes de movimiento de inversores, optimizar la eficiencia operativa y reducir los costos y el tiempo de ejecución con el uso de Python y librerías como Pyautogui y Pandas. Implementar soluciones automatizadas para mejorar la precisión y la velocidad de generación de informes financieros."
+          description: "Responsable de automatizar los procesos de informes de movimiento de inversores, optimizando la eficiencia operativa y reduciendo costos y tiempo de ejecución. Implementación de soluciones automatizadas para mejorar la precisión y velocidad de generación de informes financieros."
         },
         {
           company: "Promitia",
-          role: "Junior Frontend Developer",
+          role: "Junior Fullstack Developer",
           period: "Mar 2023 – Nov 2023",
-          location: "Lima, Peru",
-          description: "Me especialicé en la creación de interfaces atractivas y funcionales utilizando HTML, CSS y JavaScript. Trabajé con diversos frameworks como Next.js, Angular y React, además de implementar estilos eficientes con Tailwind CSS. Logré optimizar la experiencia del usuario y contribuir al éxito de proyectos mediante mi habilidad en el desarrollo frontend."
+          location: "Lima, Peru (Remoto)",
+          description: "Como desarrollador frontend en Promitia, me especialicé en la creación de interfaces atractivas y funcionales con HTML, CSS y JavaScript. Trabajé con frameworks como Next.js, Angular y React, e implementé estilos con Tailwind CSS. Optimicé la experiencia de usuario y contribuí al éxito de proyectos mediante mis habilidades de desarrollo frontend."
         }
       ]
     },
@@ -220,63 +243,72 @@ export const content = {
           issuer: "Hack & Fix",
           date: "Ene 2026",
           image: cyberCert,
-          link: "https://drive.google.com/file/d/1u8Oq0zrgvl-MSeCvkva5-hAcBhK5jEwd/view?usp=sharing"
+          link: "https://drive.google.com/file/d/1u8Oq0zrgvl-MSeCvkva5-hAcBhK5jEwd/view?usp=sharing",
+          category: "Cybersecurity"
         },
         {
           name: "Python for Everybody Specialization",
           issuer: "University of Michigan",
           date: "Nov 2023",
           image: pythonCert,
-          link: "https://www.coursera.org/account/accomplishments/specialization/C8VNZPKH82H7"
+          link: "https://www.coursera.org/account/accomplishments/specialization/C8VNZPKH82H7",
+          category: "Python"
         },
         {
           name: "Introduction to MongoDB",
           issuer: "MongoDB",
           date: "Oct 2023",
           image: mongoCert,
-          link: "https://learn.mongodb.com/c/yLofRELnRMW7VP2Yqjcn9A"
+          link: "https://learn.mongodb.com/c/yLofRELnRMW7VP2Yqjcn9A",
+          category: "Web & DB"
         },
         {
           name: "Python Data Structures",
           issuer: "University of Michigan",
           date: "Oct 2023",
           image: pythonDataCert,
-          link: "https://www.coursera.org/account/accomplishments/certificate/4AQQDAYNXTHP"
+          link: "https://www.coursera.org/account/accomplishments/certificate/4AQQDAYNXTHP",
+          category: "Python"
         },
         {
           name: "Using Python to Access Web Data",
           issuer: "University of Michigan",
           date: "Oct 2023",
           image: pythonWebCert,
-          link: "https://www.coursera.org/account/accomplishments/certificate/94ZPAHZCQLQB"
+          link: "https://www.coursera.org/account/accomplishments/certificate/94ZPAHZCQLQB",
+          category: "Python"
         },
         {
           name: "Desarrollo Web",
           issuer: "Coderhouse",
           date: "Mar 2023",
           image: coderhouseCert,
-          link: "https://drive.google.com/file/d/1lvHVVzAcmEf8bxAvUXflhTGsmi-BuFgv/view"
+          link: "https://drive.google.com/file/d/1lvHVVzAcmEf8bxAvUXflhTGsmi-BuFgv/view",
+          category: "Web & DB"
         },
         {
           name: "EF SET English Certificate (C2 Proficient)",
           issuer: "EF Standard English Test",
           date: "Mar 2023",
           image: efSetCert,
-          link: "https://cert.efset.org/gWLT3c"
+          link: "https://cert.efset.org/gWLT3c",
+          category: "Languages"
         },
         {
           name: "Scrum Fundamentals Certified",
           issuer: "SCRUMstudy",
           date: "Nov 2022",
           image: scrumCert,
-          link: "https://drive.google.com/file/d/1GymqYMsXFXfKx2QpSiANc2JQJemcAYtz/view"
+          link: "https://drive.google.com/file/d/1GymqYMsXFXfKx2QpSiANc2JQJemcAYtz/view",
+          category: "Management"
         },
         {
           name: "Advanced Program of English",
           issuer: "ICPNA",
           date: "Abr 2019",
           image: icpnaCert,
-          link: "https://drive.google.com/file/d/1HKJXiNbQF2evdijxXY5OhIqJd6aLcOUf/view"
+          link: "https://drive.google.com/file/d/1HKJXiNbQF2evdijxXY5OhIqJd6aLcOUf/view",
+          category: "Languages"
         }
       ]
     }

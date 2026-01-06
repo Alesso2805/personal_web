@@ -1,6 +1,7 @@
 import { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import { useLanguage } from '../../context/LanguageContext';
+import GlitchText from '../GlitchText/GlitchText';
 import './Projects.css';
 
 // Images can remain static or moved to data if needed, keeping simple mapping here
@@ -43,7 +44,7 @@ export default function Projects() {
   return (
     <section ref={wrapperRef} className="projects-wrapper">
       <div className="projects-header container">
-        <h2 className="section-title">{t.projects.title}</h2>
+        <GlitchText text={t.projects.title} className="section-title" />
       </div>
       <div ref={containerRef} className="projects-container">
         {t.projects.items.map((project, i) => (

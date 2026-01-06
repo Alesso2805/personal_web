@@ -12,6 +12,7 @@ function App() {
   return (
     <LanguageProvider>
       <SmoothScroll>
+        <div className="scanlines"></div>
         <LanguageToggle />
         <main className="app-container">
           <Hero />
