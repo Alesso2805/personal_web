@@ -1,3 +1,13 @@
+import pythonCert from '../assets/python_cert.png';
+import mongoCert from '../assets/mongodb_cert.png';
+import pythonDataCert from '../assets/python_data_structures_cert.png';
+import pythonWebCert from '../assets/python_web_data_cert.png';
+import efSetCert from '../assets/ef_set_cert.png';
+import coderhouseCert from '../assets/coderhouse_web_cert.png';
+import cyberCert from '../assets/cybersecurity_cert.png';
+import scrumCert from '../assets/scrum_cert.png';
+import icpnaCert from '../assets/icpna_cert.png';
+
 export const content = {
   en: {
     hero: {
@@ -65,6 +75,74 @@ export const content = {
       title: "Let's Talk",
       text: "Available for freelance work and collaborations.\nDrop me a line or say hi on social media.",
       email: "alessandrodp2222@gmail.com"
+    },
+    certifications: {
+      title: "Certifications",
+      items: [
+        {
+          name: "Cybersecurity Career Starter Certification (CCSC)",
+          issuer: "Hack & Fix",
+          date: "Jan 2026",
+          image: cyberCert,
+          link: "https://drive.google.com/file/d/1u8Oq0zrgvl-MSeCvkva5-hAcBhK5jEwd/view?usp=sharing"
+        },
+        {
+          name: "Python for Everybody Specialization",
+          issuer: "University of Michigan",
+          date: "Nov 2023",
+          image: pythonCert,
+          link: "https://www.coursera.org/account/accomplishments/specialization/C8VNZPKH82H7"
+        },
+        {
+          name: "Introduction to MongoDB",
+          issuer: "MongoDB",
+          date: "Oct 2023",
+          image: mongoCert,
+          link: "https://learn.mongodb.com/c/yLofRELnRMW7VP2Yqjcn9A"
+        },
+        {
+          name: "Python Data Structures",
+          issuer: "University of Michigan",
+          date: "Oct 2023",
+          image: pythonDataCert,
+          link: "https://www.coursera.org/account/accomplishments/certificate/4AQQDAYNXTHP"
+        },
+        {
+          name: "Using Python to Access Web Data",
+          issuer: "University of Michigan",
+          date: "Oct 2023",
+          image: pythonWebCert,
+          link: "https://www.coursera.org/account/accomplishments/certificate/94ZPAHZCQLQB"
+        },
+        {
+          name: "Desarrollo Web",
+          issuer: "Coderhouse",
+          date: "Mar 2023",
+          image: coderhouseCert,
+          link: "https://drive.google.com/file/d/1lvHVVzAcmEf8bxAvUXflhTGsmi-BuFgv/view"
+        },
+        {
+          name: "EF SET English Certificate (C2 Proficient)",
+          issuer: "EF Standard English Test",
+          date: "Mar 2023",
+          image: efSetCert,
+          link: "https://cert.efset.org/gWLT3c"
+        },
+        {
+          name: "Scrum Fundamentals Certified",
+          issuer: "SCRUMstudy",
+          date: "Nov 2022",
+          image: scrumCert,
+          link: "https://drive.google.com/file/d/1GymqYMsXFXfKx2QpSiANc2JQJemcAYtz/view"
+        },
+        {
+          name: "Advanced Program of English",
+          issuer: "ICPNA",
+          date: "Apr 2019",
+          image: icpnaCert,
+          link: "https://drive.google.com/file/d/1HKJXiNbQF2evdijxXY5OhIqJd6aLcOUf/view"
+        }
+      ]
     }
   },
   es: {
@@ -133,6 +211,74 @@ export const content = {
       title: "Hablemos",
       text: "Disponible para trabajos freelance y colaboraciones.\nEscríbeme o saluda en mis redes sociales.",
       email: "alessandrodp2222@gmail.com"
+    },
+    certifications: {
+      title: "Certificaciones",
+      items: [
+        {
+          name: "Cybersecurity Career Starter Certification (CCSC)",
+          issuer: "Hack & Fix",
+          date: "Ene 2026",
+          image: cyberCert,
+          link: "https://drive.google.com/file/d/1u8Oq0zrgvl-MSeCvkva5-hAcBhK5jEwd/view?usp=sharing"
+        },
+        {
+          name: "Python for Everybody Specialization",
+          issuer: "University of Michigan",
+          date: "Nov 2023",
+          image: pythonCert,
+          link: "https://www.coursera.org/account/accomplishments/specialization/C8VNZPKH82H7"
+        },
+        {
+          name: "Introduction to MongoDB",
+          issuer: "MongoDB",
+          date: "Oct 2023",
+          image: mongoCert,
+          link: "https://learn.mongodb.com/c/yLofRELnRMW7VP2Yqjcn9A"
+        },
+        {
+          name: "Python Data Structures",
+          issuer: "University of Michigan",
+          date: "Oct 2023",
+          image: pythonDataCert,
+          link: "https://www.coursera.org/account/accomplishments/certificate/4AQQDAYNXTHP"
+        },
+        {
+          name: "Using Python to Access Web Data",
+          issuer: "University of Michigan",
+          date: "Oct 2023",
+          image: pythonWebCert,
+          link: "https://www.coursera.org/account/accomplishments/certificate/94ZPAHZCQLQB"
+        },
+        {
+          name: "Desarrollo Web",
+          issuer: "Coderhouse",
+          date: "Mar 2023",
+          image: coderhouseCert,
+          link: "https://drive.google.com/file/d/1lvHVVzAcmEf8bxAvUXflhTGsmi-BuFgv/view"
+        },
+        {
+          name: "EF SET English Certificate (C2 Proficient)",
+          issuer: "EF Standard English Test",
+          date: "Mar 2023",
+          image: efSetCert,
+          link: "https://cert.efset.org/gWLT3c"
+        },
+        {
+          name: "Scrum Fundamentals Certified",
+          issuer: "SCRUMstudy",
+          date: "Nov 2022",
+          image: scrumCert,
+          link: "https://drive.google.com/file/d/1GymqYMsXFXfKx2QpSiANc2JQJemcAYtz/view"
+        },
+        {
+          name: "Advanced Program of English",
+          issuer: "ICPNA",
+          date: "Abr 2019",
+          image: icpnaCert,
+          link: "https://drive.google.com/file/d/1HKJXiNbQF2evdijxXY5OhIqJd6aLcOUf/view"
+        }
+      ]
     }
   }
 };
