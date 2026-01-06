@@ -40,9 +40,8 @@ export default function Contact() {
         </a>
 
         <div className="social-links">
-          <a href="#" className="social-icon contact-item"><FaGithub /></a>
-          <a href="#" className="social-icon contact-item"><FaLinkedin /></a>
-          <a href="#" className="social-icon contact-item"><FaTwitter /></a>
+          <a href="https://github.com/Alesso2805" className="social-icon contact-item"><FaGithub /></a>
+          <a href="https://www.linkedin.com/in/alessandro-david-polanco-71657421b/" className="social-icon contact-item"><FaLinkedin /></a>
           <a href={`mailto:${t.contact.email}`} className="social-icon contact-item"><FaEnvelope /></a>
         </div>
       </div>

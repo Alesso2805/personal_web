@@ -43,7 +43,8 @@ body {
   color: var(--text-primary);
   font-family: var(--font-sans);
   -webkit-font-smoothing: antialiased;
-  overflow-x: hidden;
+  overflow-x: hidden; /* Prevent horizontal scroll causing layout scaling issues */
+  width: 100%;
   cursor: default;
 }
 
@@ -74,17 +75,21 @@ button {
 
 @media (max-width: 768px) {
   .container {
-    padding: 0 1.5rem;
+    padding: 0 2rem;
+    width: 100%;
+    max-width: 100vw;
   }
 }
 
 .section-padding {
-  padding: 8rem 0;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
 }
 
 @media (max-width: 768px) {
   .section-padding {
-    padding: 4rem 0;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
   }
 }
 

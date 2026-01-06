@@ -68,7 +68,7 @@
     width: 85vw;
   }
   .projects-container {
-    padding: 0 5vw;
+    padding: 0 2rem; /* Increased from 5vw (approx 18px) to 32px */
     gap: 2rem;
   }
   .projects-header {

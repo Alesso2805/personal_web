@@ -2,7 +2,9 @@ export const content = {
   en: {
     hero: {
       greeting: "Hello, I am",
-      name: "Alessandro Alonso",
+      name: "Alessandro",
+      lastName1: "David",
+      lastName2: "Polanco",
       role: "Software Engineering Student & Developer",
       scroll: "Scroll"
     },
@@ -68,7 +70,9 @@ export const content = {
   es: {
     hero: {
       greeting: "Hola, soy",
-      name: "Alessandro Alonso",
+      name: "Alessandro",
+      lastName1: "David",
+      lastName2: "Polanco",
       role: "Estudiante de Ingeniería de Software & Desarrollador",
       scroll: "Desliza"
     },

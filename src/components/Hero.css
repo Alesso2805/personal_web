@@ -14,6 +14,7 @@
   z-index: 2;
   text-align: center;
   mix-blend-mode: difference;
+  padding: 0 2rem; /* Prevent text touching edges */
 }
 
 .hero-title {
@@ -87,8 +88,9 @@
 
 @media (max-width: 768px) {
   .hero-title {
-    font-size: 15vw;
+    font-size: 12vw; /* Reduced from 15vw to prevent overflow */
     margin-bottom: 2rem;
+    word-wrap: break-word; 
   }
   .hero-subtitle {
     font-size: 1rem;

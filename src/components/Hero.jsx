@@ -51,6 +51,8 @@ export default function Hero() {
         <h1 className="hero-title">
           <div className="line">{renderTitle(t.hero.greeting.toUpperCase())}</div>
           <div className="line text-outline">{renderTitle(t.hero.name.toUpperCase())}</div>
+          <div className="line text-outline">{renderTitle(t.hero.lastName1.toUpperCase())}</div>
+          <div className="line text-outline">{renderTitle(t.hero.lastName2.toUpperCase())}</div>
         </h1>
         <p ref={subtitleRef} className="hero-subtitle">{t.hero.role}</p>
       </div>

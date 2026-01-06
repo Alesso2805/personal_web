@@ -54,7 +54,7 @@ export default function CVSection() {
         <div className="cv-grid">
           {t.experience.jobs.map((item, index) => (
             <div key={index} className="cv-item">
-              <div className="cv-year text-accent">{item.period.split('–')[0].trim()}</div>
+              <div className="cv-year text-accent">{item.period}</div>
               <div className="cv-content">
                 <h3 className="cv-role">{item.role}</h3>
                 <h4 className="cv-company">
@@ -74,7 +74,7 @@ export default function CVSection() {
         <div className="cv-grid">
           {t.education.items.map((item, index) => (
             <div key={index} className="cv-item">
-              <div className="cv-year text-accent">{item.period.split('–')[0].split('-')[0].trim()}</div> {/* Simplify year for visual */}
+              <div className="cv-year text-accent">{item.period}</div> {/* Show full period */}
               <div className="cv-content">
                 <h3 className="cv-role">{item.degree}</h3>
                 <h4 className="cv-company">{item.institution}</h4>

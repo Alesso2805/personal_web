@@ -37,7 +37,7 @@
 
 .cv-item {
   display: grid;
-  grid-template-columns: 120px 1fr;
+  grid-template-columns: 200px 1fr;
   gap: 2rem;
   padding: 2rem;
   border: 1px solid var(--grid-color);
