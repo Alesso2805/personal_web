@@ -65,8 +65,14 @@ export const content = {
     },
     skills: {
       title: "Skills",
-      languages: "Languages: Spanish (Native), English (Advanced), French (Basic)",
-      tech: "Technologies: HTML, CSS, JavaScript, Python, SQL, MongoDB, Git, C++, React, NextJS, Angular"
+      languages: {
+        label: "Languages",
+        items: ["Spanish (Native)", "English (Advanced)", "French (Basic)"]
+      },
+      tech: {
+        label: "Technologies",
+        items: ["HTML", "CSS", "JavaScript", "Python", "SQL", "MongoDB", "Git", "C++", "React", "NextJS", "Angular"]
+      }
     },
     projects: {
       title: "Selected Works",
@@ -216,8 +222,14 @@ export const content = {
     },
     skills: {
       title: "Habilidades",
-      languages: "Idiomas: Español (Nativo), Inglés (Avanzado), Frances (Básico)",
-      tech: "Tecnologías: HTML, CSS, JavaScript, Python, SQL, MongoDB, Git, C++, React, NextJS, Angular"
+      languages: {
+        label: "Idiomas",
+        items: ["Español (Nativo)", "Inglés (Avanzado)", "Frances (Básico)"]
+      },
+      tech: {
+        label: "Tecnologías",
+        items: ["HTML", "CSS", "JavaScript", "Python", "SQL", "MongoDB", "Git", "C++", "React", "NextJS", "Angular"]
+      }
     },
     projects: {
       title: "Trabajos Seleccionados",

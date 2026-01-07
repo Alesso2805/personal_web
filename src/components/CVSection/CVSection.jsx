@@ -46,10 +46,32 @@ export default function CVSection() {
       {/* Skills */}
       <div className="cv-block">
         <GlitchText text={t.skills.title} className="section-title" />
+        
+        {/* Languages */}
         <div className="skills-box cv-item">
             <div className="cv-content" style={{gridColumn: '1 / -1'}}>
-                <p className="cv-desc"><strong>{t.skills.languages}</strong></p>
-                <p className="cv-desc"><strong>{t.skills.tech}</strong></p>
+                <h3 className="cv-role skill-category-title">01_ {t.skills.languages.label}</h3>
+                <div className="skills-container">
+                  {t.skills.languages.items.map((skill, index) => (
+                    <span key={index} className="skill-tag">
+                      {skill}
+                    </span>
+                  ))}
+                </div>
+            </div>
+        </div>
+
+        {/* Technologies */}
+        <div className="skills-box cv-item">
+            <div className="cv-content" style={{gridColumn: '1 / -1'}}>
+                <h3 className="cv-role skill-category-title">02_ {t.skills.tech.label}</h3>
+                <div className="skills-container">
+                  {t.skills.tech.items.map((skill, index) => (
+                    <span key={index} className="skill-tag">
+                      {skill}
+                    </span>
+                  ))}
+                </div>
             </div>
         </div>
       </div>
