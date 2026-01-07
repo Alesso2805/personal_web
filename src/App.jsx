@@ -2,6 +2,7 @@ import SmoothScroll from './components/SmoothScroll/SmoothScroll';
 import Hero from './components/Hero/Hero';
 import AboutMe from './components/AboutMe/AboutMe';
 import Experience from './components/Experience/Experience';
+import Education from './components/Education/Education';
 import CVSection from './components/CVSection/CVSection';
 import Projects from './components/Projects/Projects';
 import Certifications from './components/Certifications/Certifications';
@@ -20,6 +21,7 @@ function App() {
           <Hero />
           <AboutMe />
           <Experience />
+          <Education />
           <CVSection />
           <Certifications />
           <Projects />
