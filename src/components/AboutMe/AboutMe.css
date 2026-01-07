@@ -29,13 +29,8 @@
 }
 
 .about-me-title {
-  font-family: 'Space Mono', monospace;
   font-size: 5rem;
-  color: var(--text-primary);
-  text-transform: uppercase;
-  letter-spacing: 5px;
   margin: 0;
-  text-shadow: 0 0 10px rgba(0, 255, 65, 0.5);
 }
 
 .about-me-content {

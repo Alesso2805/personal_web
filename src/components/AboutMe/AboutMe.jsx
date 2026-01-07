@@ -53,7 +53,7 @@ export default function AboutMe() {
     <section ref={containerRef} className="about-me-section">
       <div className="about-me-container">
         <div ref={titleRef} className="about-me-title-wrapper">
-            <h2 className="about-me-title">{t.about.title}</h2>
+            <GlitchText text={t.about.title} className="about-me-title" />
         </div>
         
         <div ref={contentRef} className="about-me-content">

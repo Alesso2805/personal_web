@@ -2,6 +2,7 @@ import { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { useLanguage } from '../../context/LanguageContext';
+import GlitchText from '../GlitchText/GlitchText';
 import './Experience.css';
 
 gsap.registerPlugin(ScrollTrigger);
@@ -58,7 +59,7 @@ export default function Experience() {
     <section ref={containerRef} className="experience-section">
       <div className="experience-container">
         <div ref={titleRef} className="experience-title-wrapper">
-            <h2 className="experience-title">{t.experience.title}</h2>
+            <GlitchText text={t.experience.title} className="experience-title" />
         </div>
         
         <div ref={contentRef} className="experience-content">

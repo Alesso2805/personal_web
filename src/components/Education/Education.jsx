@@ -2,6 +2,7 @@ import { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { useLanguage } from '../../context/LanguageContext';
+import GlitchText from '../GlitchText/GlitchText';
 import './Education.css';
 
 gsap.registerPlugin(ScrollTrigger);
@@ -58,7 +59,7 @@ export default function Education() {
     <section ref={containerRef} className="education-section">
       <div className="education-container">
         <div ref={titleRef} className="education-title-wrapper">
-            <h2 className="education-title">{t.education.title}</h2>
+            <GlitchText text={t.education.title} className="education-title" />
         </div>
         
         <div ref={contentRef} className="education-content">
