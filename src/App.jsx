@@ -1,5 +1,7 @@
 import SmoothScroll from './components/SmoothScroll/SmoothScroll';
 import Hero from './components/Hero/Hero';
+import AboutMe from './components/AboutMe/AboutMe';
+import Experience from './components/Experience/Experience';
 import CVSection from './components/CVSection/CVSection';
 import Projects from './components/Projects/Projects';
 import Certifications from './components/Certifications/Certifications';
@@ -16,6 +18,8 @@ function App() {
         <LanguageToggle />
         <main className="app-container">
           <Hero />
+          <AboutMe />
+          <Experience />
           <CVSection />
           <Certifications />
           <Projects />

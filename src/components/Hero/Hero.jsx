@@ -1,10 +1,14 @@
 import { useEffect, useRef, useState } from 'react';
 import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { useLanguage } from '../../context/LanguageContext';
 import './Hero.css';
 
+gsap.registerPlugin(ScrollTrigger);
+
 export default function Hero() {
   const containerRef = useRef(null);
+  const contentRef = useRef(null);
   const scrollRef = useRef(null);
   
   const { t } = useLanguage();
@@ -32,20 +36,32 @@ export default function Hero() {
 
   useEffect(() => {
     const ctx = gsap.context(() => {
-      const tl = gsap.timeline({ defaults: { ease: 'power4.out' } });
+      // Setup ScrollTrigger for the fly-through effect
+      const tl = gsap.timeline({
+        scrollTrigger: {
+          trigger: containerRef.current,
+          start: "top top",
+          end: "+=1500", // Distance of the "flight"
+          scrub: 1, // Smooth scrolling
+          pin: true,
+          anticipatePin: 1
+        }
+      });
 
-      const chars = containerRef.current.querySelectorAll('.char');
+      // Fly through the content
+      tl.to(contentRef.current, {
+        scale: 50, // Massive scale to simulate flying through
+        z: 1000,
+        opacity: 0,
+        duration: 1,
+        ease: "power1.inOut"
+      });
       
-      tl.from(chars, {
-        yPercent: 120,
-        stagger: 0.05,
-        duration: 1.2,
-        delay: 0.2
-      })
-      .to(scrollRef.current, {
-        opacity: 1,
-        duration: 0.5
-      }, '-=0.5');
+      // Hide scroll indicator early
+      tl.to(scrollRef.current, {
+         opacity: 0,
+         duration: 0.2
+      }, 0);
 
     }, containerRef);
 
@@ -62,16 +78,13 @@ export default function Hero() {
 
   return (
     <section ref={containerRef} className="hero-section">
-      <div className="hero-content">
+      <div ref={contentRef} className="hero-content">
         <h1 className="hero-title">
           <div className="line">{renderTitle(t.hero.greeting.toUpperCase())}</div>
           <div className="line text-outline">{renderTitle(t.hero.name.toUpperCase())}</div>
           <div className="line text-outline">{renderTitle(t.hero.lastName1.toUpperCase())}</div>
           <div className="line text-outline">{renderTitle(t.hero.lastName2.toUpperCase())}</div>
         </h1>
-        <p className="hero-subtitle">
-          {typedText}<span className="cursor-blink">|</span>
-        </p>
       </div>
       
       <div ref={scrollRef} className="scroll-indicator">

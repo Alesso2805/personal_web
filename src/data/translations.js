@@ -15,7 +15,6 @@ export const content = {
       name: "Alessandro",
       lastName1: "David",
       lastName2: "Polanco",
-      role: "Software Engineering Student & Developer",
       scroll: "Scroll"
     },
     about: {
@@ -167,7 +166,6 @@ export const content = {
       name: "Alessandro",
       lastName1: "David",
       lastName2: "Polanco",
-      role: "Estudiante de Ingeniería de Software & Desarrollador",
       scroll: "Desliza"
     },
     about: {

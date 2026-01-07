@@ -24,7 +24,7 @@ export default function CVSection() {
       });
 
       // Animate List Items
-      gsap.from('.cv-item, .about-text, .skills-box', {
+      gsap.from('.cv-item, .skills-box', {
         scrollTrigger: {
           trigger: '.cv-grid',
           start: 'top 85%',
@@ -43,32 +43,6 @@ export default function CVSection() {
   return (
     <section ref={containerRef} className="cv-section section-padding container">
       
-      {/* About / Profile */}
-      <div className="cv-block mb-large">
-        <GlitchText text={t.about.title} className="section-title" />
-        <p className="about-text">{t.about.description}</p>
-      </div>
-
-      {/* Experience */}
-      <div className="cv-block mb-large">
-        <GlitchText text={t.experience.title} className="section-title" />
-        <div className="cv-grid">
-          {t.experience.jobs.map((item, index) => (
-            <div key={index} className="cv-item">
-              <div className="cv-year text-accent">{item.period}</div>
-              <div className="cv-content">
-                <h3 className="cv-role">{item.role}</h3>
-                <h4 className="cv-company">
-                  {item.company} <span style={{opacity:0.6}}>| {item.location}</span>
-                </h4>
-                <div className="cv-period-mobile">{item.period}</div>
-                <p className="cv-desc">{item.description}</p>
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
-
       {/* Education */}
       <div className="cv-block mb-large">
         <GlitchText text={t.education.title} className="section-title" />
